@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print the sizeof many var types
+ * main - Entry point
  *
  * Description: using the main function
  * this program prints "Programming is like building a multilingual puzzle
