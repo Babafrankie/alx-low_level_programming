@@ -16,7 +16,7 @@ int main(void)
 	for (low = 'a' ; low <= 'z' ; low++)
 	{
 		if (low i= e && low i= q)
-			putchar(low);
+		putchar(low);
 	}
 		printf("\n");
 
