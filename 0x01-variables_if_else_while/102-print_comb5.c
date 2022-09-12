@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - print possible combination of two 2-digit
- * numbers
+ * main - print possible combination of two 2-digit number
+ * 
+ *
  *
  * Return: returns zero at the end
  */
 int main(void)
 {
+
 	int i, p;
 
 	for (i = 0; i < 100; i++)
