@@ -1,38 +1,30 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h> 
+
 /**
- * main - print possible combination of two 2-digits
- * Description: print
- *
- * Return: Alway 0
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int p1 = 0, p2;
-
-	while (p1 <= 99)
+	int i, j;
+	for (i = 0; i < 100; i++)
 	{
-		p2 = p1;
-		while (p2 <= 99)
+		for (j = 0; j < 100; j++)
 		{
-			if (p2 != p1)
+			if (i < j)
 			{
-				putchar((p1 / 10) + 48);
-				putchar((p1 % 10) + 48);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
-				putchar((p2 / 10) + 48);
-				putchar((p2 % 10) + 48);
-
-				if (p1 != 98 || p2 != 98)
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
-				}	
+				}
 			}
-			++p2;
 		}
-		++p1;
 	}
 	putchar('\n');
 	return (0);
