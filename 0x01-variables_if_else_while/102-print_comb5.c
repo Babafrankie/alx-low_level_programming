@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
- *
+ * main - print possible combination of two 2-digits
  *
  * Description: print
  *
  *
- *
+ * Return: Alway 0
  */
 int main(void)
 {
