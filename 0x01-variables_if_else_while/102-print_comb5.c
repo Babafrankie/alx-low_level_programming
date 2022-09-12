@@ -3,8 +3,6 @@
 #include <time.h>
 /**
  * main - print possible combination of two 2-digit number
- * 
- *
  *
  * Return: returns zero at the end
  */
