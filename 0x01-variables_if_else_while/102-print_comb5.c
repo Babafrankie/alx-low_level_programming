@@ -4,6 +4,8 @@
 /**
  * main - print possible combination of two 2-digit number
  *
+ *
+ *
  * Return: returns zero at the end
  */
 int main(void)
@@ -27,8 +29,7 @@ int main(void)
 				{
 					putchar(',');
 					putchar(' ');
-				}
-				
+				}	
 			}
 			++p2;
 		}
