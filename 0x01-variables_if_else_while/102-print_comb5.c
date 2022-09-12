@@ -10,10 +10,10 @@ int main(void)
 {
 	int p1 = 0, p2;
 
-	while(p1 <= 99)
+	while (p1 <= 99)
 	{
 		p2 = p1;
-		while(p2 <= 99)
+		while (p2 <= 99)
 		{
 			if (p2 != p1)
 			{
@@ -23,7 +23,7 @@ int main(void)
 				putchar((p2 / 10) + 48);
 				putchar((p2 % 10) + 48);
 
-				if(p1 != 98 || p2 != 98)
+				if (p1 != 98 || p2 != 98)
 				{
 					putchar(',');
 					putchar(' ');
