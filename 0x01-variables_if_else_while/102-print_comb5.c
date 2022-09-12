@@ -3,9 +3,7 @@
 #include <time.h>
 /**
  * main - print possible combination of two 2-digits
- *
  * Description: print
- *
  *
  * Return: Alway 0
  */
