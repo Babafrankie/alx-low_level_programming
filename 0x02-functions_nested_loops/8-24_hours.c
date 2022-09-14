@@ -21,12 +21,12 @@ void jack_bauer(void)
 	_putchar(hours / 10 + '0');
 	_putchar(hours_remainder + '0');
 	_putchar(':');
-	_putchar(minutes / 10 + 10);
+	_putchar(minutes / 10 + '0');
 	_putchar(mins_remainder + '0');
 	minutes++;
 	_putchar('\n');
 	}
 	hours++;
-	return (0);
+	minutes = 0;
 }
 }
