@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generates randomvalid passwords
+ * main - generates random valid passwords
  * Return: 0
  *
  */
@@ -19,4 +19,5 @@ int main(void)
 	}
 	printf("%c", 2772 - sum);
 
-	return (0)
+	return (0);
+}
