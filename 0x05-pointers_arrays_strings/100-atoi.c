@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stio.h>
+#include <stdio.h>
 /**
  * _atoi - convert string to aninteger.
  * @s: pointer to a character string.
