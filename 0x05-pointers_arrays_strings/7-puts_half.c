@@ -7,13 +7,13 @@
  */
 void puts_half(char *str)
 {
-	int index,half;
+	int index, half;
 
 	index = 0;
 	while (str[index] !='\0')
 		index++;
 
-	Half = index / 2;
+	half = index / 2;
 
 	if (index % 2 == 1)
 		half++;
