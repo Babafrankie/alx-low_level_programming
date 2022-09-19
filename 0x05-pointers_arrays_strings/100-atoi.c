@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 #include <stio.h>
 /**
  * _atoi - convert string to aninteger.
@@ -7,7 +7,7 @@ i#include "main.h"
  * Return: void
  */
 
-imt _atoi(char *s)
+int _atoi(char *s)
 {
 	int sign;
 	unsigned int num;
