@@ -19,7 +19,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (i > j)
 		l = i;
 	else
-		l =j;
+		l = j;
 	if (l + 1 > size_r)
 		return (0);
 	r[l] = '\0';
