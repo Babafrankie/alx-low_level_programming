@@ -12,7 +12,7 @@ int _is_prime_number(int n)
 }
 
 /**
- * _is_prime_number - find square root
+ * is_prime_number - find square root
  * @n: int to find square root
  * @val: square root
  * Return: int
