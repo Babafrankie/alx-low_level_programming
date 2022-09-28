@@ -6,7 +6,7 @@
  * Return: int
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	return (square(n, 1));
 }
