@@ -1,5 +1,7 @@
 #include "main.h"
 
+int is_prime_number
+
 /**
  * _is_prime_number - find natural square root
  * @n: int
@@ -12,7 +14,7 @@ int _is_prime_number(int n)
 }
 
 /**
- * is_prime_number - find square root
+ * square - find square root
  * @n: int to find square root
  * @val: square root
  * Return: int
