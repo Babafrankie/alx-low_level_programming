@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio>
 
 /**
  * _is_prime_number - find natural square root
@@ -19,13 +18,13 @@ int _is_prime_number(int n)
  * Return: int
  */
 
-int is_prime_number(int n, int val)
+int square(int n, int val)
 {
 
 	if (val * val == n)
 		return (val);
 	else if (val * val < n)
-		return  (is_prime_number(n, val + 1));
+		return  (square(n, val + 1));
 	else
 		return (-1);
 
