@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - find natural square root
+ * _is_prime_number - find natural square root
  * @n: int
  * Return: int
  */
 
-int _sqrt_recursion(int n)
+int _is_prime_number(int n)
 {
 	return (square(n, 1));
 }
