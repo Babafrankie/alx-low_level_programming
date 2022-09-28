@@ -1,6 +1,6 @@
 #include "main.h"
 
-int is_prime_number
+int is_prime_number(int);
 
 /**
  * _is_prime_number - find natural square root
