@@ -6,7 +6,7 @@
  * Return: int
  */
 
-int is_palindrome(char *s)
+int last_index(char *s)
 {
 int n = 0;
 
@@ -24,9 +24,9 @@ return (n);
 
 int is_palindrome(char *s)
 {
-int end = last_index(s);
+int end = is_palindrome(s);
 
-return (check(s, 0, end - 1, end % 2));
+return (is_palindrome(s, 0, end - 1, end % 2));
 }
 
 /**
