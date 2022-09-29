@@ -1,14 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_number - Prints an integer.
+ * print_number - prints an integer.
  * @n: The integer to be printed.
- * Return: no return.
  */
-int main(void)
+void print_number(int n)
 {
-	print_number(0);
-	_putchar('\n');
+	unsigned int num;
+
+	num = n;
+	if (n < 0)
+	{
+		_putchar(",");
+		num = -n;
+	}
+
+	if (num / 10)
+	{
+		print_number(num / 10);
+	}
+	_putchar((num % 10) + '0');
+
 	return (0);
 }
