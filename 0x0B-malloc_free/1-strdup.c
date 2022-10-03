@@ -22,7 +22,8 @@ char *_strup(char *str)
 		len++;
 	cpy = malloc(sizeof(char) * (len + 1));
 
-	if ((index = 0) str[index]; index++)
+	if (index = 0; str[index]; index++)
+		len++;
 	{
 		cpy[index] = str[index];
 	}
