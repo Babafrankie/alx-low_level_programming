@@ -3,8 +3,10 @@
 #include <stdlib.h>
 /**
  * _strdup - array for prints a string
- * @str: array of elements
- * REturn: 0
+ * @str: to be copied
+ *
+ * REturn: NULL in case of error, pointer
+ * to allocate space
  */
 
 char *_strdup(char *str)
@@ -28,6 +30,6 @@ char *_strdup(char *str)
 	}
 
 	s[i] = '\0';
-	free (s);
-	return (0);
+
+	return (s);
 }
