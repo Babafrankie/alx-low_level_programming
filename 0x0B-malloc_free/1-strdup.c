@@ -23,8 +23,8 @@ char *_strdup(char *str)
 	if (array == NULL)
 		return (NULL);
 
-	for (r = 0; str(str[r] r++)
+	for (r = 0; str[str[r]] r++);
 		array[r] = str[r];
 
-	return (array);
+		return (array);
 }
