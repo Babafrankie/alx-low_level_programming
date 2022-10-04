@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
 #include <stdlib.h>
 
 /**
@@ -52,14 +50,14 @@ char *_strcpy(char *dest, char *src)
 char *_strdup(char *str)
 {
 	char *dst;
-	unsigned int size;
+	unsigned int i;
 
 	if (str == 0)
 	{
 		return (NULL);
 	}
 
-	size = _strlen(str) + 1;
+	i = _strlen(str) + 1;
 
 	dst = (char *) malloc(sizeof(char));
 
