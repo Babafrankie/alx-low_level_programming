@@ -4,7 +4,7 @@
 /**
  * _strdup - array for prints a string
  * @str: array of elements
- * REturn: pointer
+ * REturn: 0
  */
 
 char *_strdup(char *str)
@@ -13,14 +13,14 @@ char *_strdup(char *str)
 	int a, i;
 
 	if (str == NULL)
-		return (NULL);
+		return (1);
 
 	for (a = 0; str[a]; a++)
 		i++;
 	s = malloc(sizeof(char) * (i + 1));
 
 	if (s == NULL)
-		return (NULL);
+		return (1);
 
 	for (a = 0; str[a]; a++)
 	{
@@ -28,6 +28,7 @@ char *_strdup(char *str)
 	}
 
 	s[i] = '\0';
+	free (s);
 
-	return (s);
+	return (0);
 }
