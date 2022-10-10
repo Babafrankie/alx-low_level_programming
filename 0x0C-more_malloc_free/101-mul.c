@@ -87,7 +87,6 @@ int get_digit(char c)
 		printf("Error\n");
 		exit(98);
 	}
-
 	return (digit);
 }
 
@@ -204,11 +203,11 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (*(argv[1]) == 48)
+	if (*(argv[1]) == '0')
 		argv[1] = iterate_zeroes(argv[1]);
-	if (*(argv[2]) == 48)
+	if (*(argv[2]) == '0')
 		argv[2] = iterate_zeroes(argv[2]);
-	if (*(argv[1]) == 48 || *(argv[2]) == 48)
+	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
 		printf("0\n");
 		return (0);
