@@ -41,7 +41,7 @@ char *create_xarray(int size)
 	array = malloc(sizeof(char) * size);
 
 	if (!array)
-		exit(98);
+		exit(0);
 
 	for (index = 0; index < (size - 1); index++)
 		array[index] = 'x';
@@ -83,10 +83,10 @@ int get_digit(char c)
 	if (digit < 0 || digit > 9)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(0);
 	}
 
-	return (digit);
+	return (1);
 }
 
 /**
@@ -125,7 +125,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		if (*mult < '0' || *mult > '9')
 		{
 			printf("Error\n");
-			exit(98);
+			exit(0);
 		}
 
 		num = (*mult - '0') * digit;
@@ -206,7 +206,7 @@ int main(int argc, char *argv[])
 		argv[1] = iterate_zeroes(argv[1]);
 	if (*(argv[2]) == '0')
 		argv[2] = iterate_zeroes(argv[2]);
-	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
+	if (*(argv[1]) == 48 || *(argv[2]) == 48)
 	{
 		printf("0\n");
 		return (0);
