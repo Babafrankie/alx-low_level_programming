@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 int find_len(char *str);
 char *create_xarray(int size);
@@ -41,7 +43,7 @@ char *create_xarray(int size)
 	array = malloc(sizeof(char) * size);
 
 	if (!array)
-		exit(0);
+		exit(98);
 
 	for (index = 0; index < (size - 1); index++)
 		array[index] = 'x';
@@ -83,10 +85,10 @@ int get_digit(char c)
 	if (digit < 0 || digit > 9)
 	{
 		printf("Error\n");
-		exit(0);
+		exit(98);
 	}
 
-	return (1);
+	return (digit);
 }
 
 /**
@@ -125,7 +127,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		if (*mult < '0' || *mult > '9')
 		{
 			printf("Error\n");
-			exit(0);
+			exit(98);
 		}
 
 		num = (*mult - '0') * digit;
@@ -202,9 +204,9 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (*(argv[1]) == '0')
+	if (*(argv[1]) == 48)
 		argv[1] = iterate_zeroes(argv[1]);
-	if (*(argv[2]) == '0')
+	if (*(argv[2]) == 48)
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == 48 || *(argv[2]) == 48)
 	{
