@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
 #include "lists.h"
 
 size_t looped_listint_count(listint_t *head);
@@ -89,5 +92,5 @@ size_t free_listint_safe(listint_t **h)
 
 	h = NULL;
 
-	return (NULL);
+	return (nodes);
 }
